@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soyalin</title>
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+
+        <!-- Barra de navegación -->
+    <nav id="nav-bar" class="alt">
+
+        <div class="nav-bar-container">
+        
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png">
+                </a>
+            </div>
+            
+            <div href="#menu" class="nav-menu">
+                <img src="menu.svg" class="nav-icon">
+            </div>
+            
+            <div href="#" class="nav-menu nav-menu-second">
+                <img src="close.svg" class="nav-icon">
+            </div>
+
+            <ul class="dropdown" id="menu">
+
+                <li class="dropdown-list">
+                    <a href="index.html" class="dropdown-link">
+                        <img src="home.png" class="dropdown-icon">
+                        <span class="dropdown-span">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="dropdown-list">
+                    <a href="productos.html" class="dropdown-link">
+                        <img src="product.png" class="dropdown-icon">
+                        <span class="dropdown-span">Productos</span>
+                    </a>
+                </li>
+
+                <li class="dropdown-list">
+                    <div class="dropdown-link">
+                        <img src="natural.png" class="dropdown-icon">
+                        <span class="dropdown-span">Remedios Naturales</span>
+                        <img src="down.svg" class="dropdown-arrow">
+                        <input type="checkbox" class="dropdown-check">                   
+                    </div>
+
+                    <div class="dropdown-content">
+                        
+                        <ul class="dropdown-sub">
+
+                            <li class="dropdown-li">
+                                <a href="index.html#aire" class="dropdown-anchor">Aire puro</a>
+                            </li>
+                            
+                            <li class="dropdown-li">
+                                <a href="index.html#descanso" class="dropdown-anchor">Descanso</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="index.html#ejercicio" class="dropdown-anchor">Ejercicio físico</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="index.html#luz" class="dropdown-anchor">Luz solar</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="index.html#agua" class="dropdown-anchor">Agua</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="index.html#nutricion" class="dropdown-anchor">Nutrición</a>
+                            </li>
+
+                            <li  class="dropdown-li">
+                                <a href="index.html#temperancia" class="dropdown-anchor">Temperancia</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="index.html#esperanza" class="dropdown-anchor">Esperanza</a>
+                            </li>
+                            
+                        </ul>
+                    
+                    </div>
+
+                </li>
+
+
+                <li class="dropdown-list">
+                    <a href="nosotros.html" class="dropdown-link">
+                        <img src="about-us.png" class="dropdown-icon">
+                        <span class="dropdown-span">Sobre Nosotros</span>
+                    </a>
+                </li>
+
+                <li class="dropdown-list">
+                    <a href="index.html#contacto" class="dropdown-link">
+                        <img src="contact.png" class="dropdown-icon">
+                        <span class="dropdown-span">Contáctanos</span>
+                    </a>
+                </li>
+            </ul>
+        
+        </div>
+        
+    </nav>
+        <!-- Botón flotante -->
+        <button id="btnUp" title="Subir">↑</button>
+        <!-- Botón volver -->   
+    <a href="productos.html#barrita"><button id="btnback" title="volver"><img src="arrow-left.png" alt=""></button></a>
+        <!-- Botón Whatsapp  -->    
+        <a href="https://api.whatsapp.com/send?phone=56979420958" target="_blank"><button id="btnWpp" title="Whatsapp"><img src="whatsapp.png" ></button></a>
+        
+        <div class="product-container">
+            <div class="product-main">
+                <img src="barritas.png" alt="Barritas" class="product-image">
+            <div class="product-details">
+                <h1 class="product-name">Barritas Energéticas<a href="https://wa.me/56979420958?text=Hola%2C%20me%20gustaría%20comprar%20Barritas%20Energéticas!" target="_blank"><button class="compra">Comprar</button></a></h1>
+                <p class="product-price">$ 1.000</p>
+                <p class="product-description">
+                    Pequeñas pero poderosas. Elaboradas con maní, coco rallado, chía, sésamo, panela y miel, estas barritas te entregan un impulso energético ideal para antes o después de entrenar, o como colación saludable durante el día.
+                    Sin azúcar refinada. Fuente de proteínas y omega 3.
+                </p>
+            <div class="product-tags">
+                    <label class="label energetico">Energético</label>
+                    <label class="label snack">Snack</label>
+                    <label class="label miel">Endulzado con miel</label>
+                    <label class="label fitness">Fitness</label>
+            </div>
+            <div class="nutrition-table">
+                <img src="tabla-barritas.png">
+            </div>
+        </div>
+    </div>
+    
+    <div class="related-products">
+        <h2>Productos Relacionados</h2>
+        <div class="related-list">
+            <a href="granola.html"><div class="related-item">
+                <img src="granola.png" alt="Barritas">
+                <p>Granola Artesanal</p>
+            </div></a>
+            <a href="leche.html"><div class="related-item">
+                <img src="leche.jpg" alt="Mix de Frutos Secos">
+                <p>Leche de soya</p>
+            </div></a>
+            <a href="tofu.html"><div class="related-item">
+                <img src="tofu.jpg" alt="Avena">
+                <p>Tofu</p>
+            </div></a>
+            <a href="casiparmesano.html"><div class="related-item">
+                <img src="casiparmesano.png" alt="Avena">
+                <p>Casiparmesano</p>
+            </div></a>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2025 Soyalin. Todos los derechos reservados.</p>
+        <div class="redes">
+            <a href="https://es-la.facebook.com/soyalin.chile/" target="_blank" rel="noopener"><img src="facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/soyalinchile/" target="_blank" rel="noopener"><img src="instagram.svg" alt="Instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=56979420958" target="_blank"><img src="whatsapp.svg" alt="WhatsApp"></a>
+            <a href="mailto:soyalinchile.2020@gmail.com?subject=Consulta%20de%20página%20web" target="_blank"><img src="envelope.svg" alt="E-mail"></a>
+        </div>
+        <div class="pz-pablo">Web desarrollada por <a href="#">PzPablo.</a></div>
+    </footer>
+
+    
+<script src="script.js"></script>
+
+</body>
+</html>

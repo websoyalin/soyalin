@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Soyalin</title>
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+
+    <div class="bg-img"></div>
+
+    <!-- Barra de navegación -->
+    <nav id="nav-bar" class="alt">
+
+        <div class="nav-bar-container">
+        
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png">
+                </a>
+            </div>
+
+            <div href="#menu" class="nav-menu">
+                <img src="menu.svg" class="nav-icon">
+            </div>
+            
+            <div href="#" class="nav-menu nav-menu-second">
+                <img src="close.svg" class="nav-icon">
+            </div>
+
+            <ul class="dropdown" id="menu">
+
+                <li class="dropdown-list">
+                    <a href="index.html" class="dropdown-link">
+                        <img src="home.png" class="dropdown-icon">
+                        <span class="dropdown-span">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="dropdown-list">
+                    <a href="productos.html" class="dropdown-link">
+                        <img src="product.png" class="dropdown-icon">
+                        <span class="dropdown-span">Productos</span>
+                    </a>
+                </li>
+
+                <li class="dropdown-list">
+                    <div class="dropdown-link">
+                        <img src="natural.png" class="dropdown-icon">
+                        <span class="dropdown-span">Remedios Naturales</span>
+                        <img src="down.svg" class="dropdown-arrow">
+                        <input type="checkbox" class="dropdown-check">                   
+                    </div>
+
+                    <div class="dropdown-content">
+                        
+                        <ul class="dropdown-sub">
+
+                            <li class="dropdown-li">
+                                <a href="index.html#aire" class="dropdown-anchor">Aire puro</a>
+                            </li>
+                            
+                            <li class="dropdown-li">
+                                <a href="#descanso" class="dropdown-anchor">Descanso</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="#ejercicio" class="dropdown-anchor">Ejercicio físico</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="#luz" class="dropdown-anchor">Luz solar</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="#agua" class="dropdown-anchor">Agua</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="#nutricion" class="dropdown-anchor">Nutrición</a>
+                            </li>
+
+                            <li  class="dropdown-li">
+                                <a href="#temperancia" class="dropdown-anchor">Temperancia</a>
+                            </li>
+
+                            <li class="dropdown-li">
+                                <a href="#esperanza" class="dropdown-anchor">Esperanza</a>
+                            </li>
+                            
+                        </ul>
+                    
+                    </div>
+
+                </li>
+
+
+                <li class="dropdown-list">
+                    <a href="nosotros.html" class="dropdown-link">
+                        <img src="about-us.png" class="dropdown-icon">
+                        <span class="dropdown-span">Sobre Nosotros</span>
+                    </a>
+                </li>
+
+                <li class="dropdown-list">
+                    <a href="#contacto" class="dropdown-link">
+                        <img src="contact.png" class="dropdown-icon">
+                        <span class="dropdown-span">Contáctanos</span>
+                    </a>
+                </li>
+            </ul>
+        
+        </div>
+        
+    </nav>
+
+    <!-- Botón flotante -->
+    <button id="btnUp" title="Subir"><img src="arrow-up.png"></button>
+    <!-- Botón Whatsapp  -->
+    <a href="https://api.whatsapp.com/send?phone=56979420958" target="_blank"><button id="btnWpp" title="Whatsapp"><img src="whatsapp.png"></button></a>
+
+    <!-- Hero Video-->
+    <section id="banner-content">
+        
+        <div class="banner-video">
+            <video src="video.mp4" autoplay loop muted></video>
+        </div>
+
+        <div class="banner-overlay"></div>
+
+        <div class="banner-content"><h1>SOYALIN</h1>
+            <p>Los sabores de la naturaleza</p></div>
+
+    </section>
+
+    <!-- Imagen de fondo -->
+    <div class="bg-img" id="cel"></div>
+    <!-- Productos Destacados -->
+    <section class="productos">
+        <a href="productos.html"><h1 id="productos">Nuestros Productos</h1></a>
+
+        <div class="productos-grid">
+
+            <section class="big-prod">
+
+                <a href="granola.html"><div class="producto-card big">
+                    
+                    <div class="top">Top <br>venta</div>
+                    <div class="precio">$ 5.000</div>
+                    <img src="granola.png" alt="Granola Artesanal">
+                    <h3>Granola Artesanal<br><span>500g</span></h3>
+                    
+                </div>
+            </a>
+            
+            <a href="barritas.html"><div class="producto-card big">
+                
+                <div class="top">Top <br>venta</div>
+                <div class="precio">$ 1.000</div>
+                <img src="barritas.png" alt="Barra de cereales">
+                <h3>Barritas energéticas<br><span>60g</span></h3>
+                </div>
+            </a>
+            
+            </section>
+            
+            <a href="tofu.html"><div class="producto-card">
+                
+                <div class="precio">$ 3.500</div>
+                <img src="tofu.jpg" alt="Tofu Fresco">
+                <h3>Tofu Fresco<br><span>380g</span></h3>
+                
+            </div></a>
+            
+            <a href="casiparmesano.html"><div class="producto-card">
+                
+                <div class="precio">$ 3.000</div>
+                <img src="casiparmesano.png" alt="Casiparmesano">
+                <h3>Casiparmesano<br><span>100g</span></h3>
+                
+            </div></a>
+            
+            <a href="levadura.html"><div class="producto-card">
+                
+                <div class="precio">$ 4.000</div>
+                <img src="levadura.png" alt="Levadura nutricional">
+                <h3>Levadura nutricional<br><span>100g</span></h3>
+                
+            </div></a>
+            
+            <a href="leche.html"><div class="producto-card">
+                
+                <div class="precio">$ 2.800</div>
+                <img src="leche.jpg" alt="Leche de soja">
+                <h3>Leche de soja<br><span>1000ml</span></h3>
+            </div></a>
+
+
+
+        </div>
+
+        <div class="container-personalizado">
+            <div class="product-mayorista">
+                <h2>¿Buscas algo más?</h2>
+                <p>Contáctanos para pedidos al por mayor y personalización de productos.</p>
+                <a href="https://wa.me/56979420958?text=Hola%2C%20me%20gustaría%20comprar%20productos%20al%20por%20mayor%20o%20personalizados!" target="_blank"><button id="btn-mayor">Contáctanos</button></a>
+            </div>
+            
+            <div class="product-mayorista">
+                <h2>Paquetes Empresariales</h2>
+                <p>Disfruta de un paquete exlusivo y personalizado para esa reunión tan importante en tu empresa.</p>
+                <a href="https://wa.me/56979420958?text=Hola%2C%20me%20gustaría%20concoer%20sobre%20los%20paquetes%20empresariales!" target="_blank"><button id="btn-mayor">Contáctanos</button></a>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Remedios Naturales -->
+    <section id="rem-nat">
+        
+        <div class="remedios-header">
+            <h1>Remedios Naturales</h1>
+            <p>Los 8 remedios naturales son principios de salud promovidos por la Iglesia Adventista del Séptimo Día como parte de un estilo de vida integral. Son recursos simples, accesibles y dados por la naturaleza para prevenir enfermedades, fortalecer el cuerpo y la mente, y promover el bienestar espiritual. Estos principios se enfocan en una vida equilibrada, en armonía con Dios, la naturaleza y uno mismo.</p>
+        </div>
+        
+        <div class="inner">
+            
+            <section id="aire" class="remedio">
+
+                <div class="card-header">
+
+                    <img src="aire-puro.jpg" alt="Aire puro">
+                    <h2>Aire puro</h2>
+                    <blockquote>“El aire puro es el remedio gratuito y que todos pueden tener. Está especialmente indicado para los enfermos, y si se le da oportunidad, vitalizará todo el organismo. El aire puro y fresco tiene propiedades medicinales.” — Consejos sobre el Régimen Alimenticio, p. 104</blockquote>
+
+                </div>
+
+                <div class="remedios-extra">
+
+                    <ul>
+                        <li>- Ventila diariamente todos los ambientes del hogar, incluso en invierno.</li>
+                        <li>- Duerme con una ventana entreabierta para asegurar el ingreso de aire fresco.</li>
+                        <li>- Evita lugares cerrados o con humo o contaminantes.</li>
+                        <li>- Pasa tiempo en la naturaleza donde el aire sea limpio y oxigenado.</li>
+                        <li>- Realiza ejercicios respiratorios profundos al aire libre.</li>
+                        <li>- Coloca plantas en interiores para mejorar la calidad del aire.</li>
+                    </ul>
+
+                </div>
+
+                <button class="leer-mas">Leer más...</button>
+
+            </section>
+
+            <section id="descanso" class="remedio">
+
+                <div class="card-header">
+
+                    <img src="descanso.jpg" alt="Descanso">
+                    <h2>Descanso</h2>
+                    <blockquote>“El sueño, la tranquilidad y el reposo son esenciales para la salud del cuerpo y de la mente.”— El Ministerio de Curación, p. 274<br>“El descanso, cuando se toma en el tiempo debido y en el ambiente adecuado, es un restaurador eficaz.”— Consejos sobre la Salud, p. 183</blockquote>
+
+                </div>
+
+                <div class="remedios-extra">
+
+                    <ul>
+                        <li>- Acuéstate y levántate a la misma hora todos los días.</li>
+                        <li>- Duerme entre 7 y 8 horas por noche, según tu necesidad personal.</li>
+                        <li>- Evita pantallas y luces fuertes al menos 1 hora antes de dormir.</li>
+                        <li>- Crea un ambiente oscuro, silencioso y fresco para descansar.</li>
+                        <li>- No comas comidas pesadas antes de acostarte.</li>
+                    </ul>
+
+                </div>
+
+                <button class="leer-mas">Leer más...</button>
+            
+            </section>
+       
+            <section id="ejercicio" class="remedio">
+
+                <div class="card-header">
+
+                    <img src="ejercicio.jpg" alt="Hombre y mujer corriendo">
+
+                    <div class="header-text">
+
+                        <h2>Ejercicio físico</h2>
+                        <blockquote>“El ejercicio es indispensable para la digestión y para una circulación saludable de la sangre.” — Consejos sobre el Régimen Alimenticio, p. 100<br>“El ejercicio al aire libre es uno de los mejores tónicos para el cuerpo y la mente.” — El Ministerio de Curación, p. 237</blockquote>
+
+                    </div>
+
+                </div>
+
+                <div class="remedios-extra">
+
+                    <ul>
+                        <li>- Camina al menos 30 minutos diarios, preferiblemente al aire libre.</li>
+                        <li>- Realiza actividades físicas que disfrutes (bicicleta, natación, jardinería).</li>
+                        <li>- Incluye ejercicios de fuerza o estiramiento varias veces por semana.</li>
+                        <li>- Usa las escaleras en lugar del ascensor siempre que sea posible.</li>
+                        <li>- Haz pausas activas si trabajas sentado mucho tiempo.</li>
+                        <li>- No te exijas en exceso: sé constante y gradual.</li>
+                    </ul>
+                
+                </div>
+
+                <button class="leer-mas">Leer más...</button>
+            
+            </section>
+
+            <section id="luz" class="remedio">
+              
+                <div class="card-header">
+              
+                    <img src="luz-solar.jpg" alt="Luz del sol">
+              
+                    <div class="header-text">
+              
+                        <h2>Luz solar</h2>
+                        <blockquote>“El sol es una bendición para los enfermos y para los sanos.” – El ministerio de curación, p. 235<br>“El sol es el mejor desinfectante que existe. Su luz y calor son poderosos agentes de salud.” — La Temperancia, p. 275</blockquote>
+              
+                    </div>
+              
+                </div>
+              
+                <div class="remedios-extra">
+
+                    <ul>
+                        <li>- Toma al menos 15–30 minutos de sol directo cada día (evitando horas de mayor radiación).</li>
+                        <li>- Exponte al sol en las primeras horas de la mañana o al final de la tarde.</li>
+                        <li>- Abre cortinas y ventanas para que entre la luz solar en tu hogar.</li>
+                        <li>- Realiza caminatas o ejercicios al sol.</li>
+                        <li>- Lava y seca la ropa al sol siempre que sea posible.</li>
+                        <li>- Usa sombrero o protector adecuado, pero no bloquees totalmente la exposición solar saludable.</li>
+                    </ul>
+                
+                </div>
+            
+                <button class="leer-mas">Leer más...</button>
+
+            </section>
+
+            <section id="agua" class="remedio">
+ 
+                <div class="card-header">
+ 
+                    <img src="agua.jpg" alt="Mujer tomando agua">
+ 
+                    <div class="header-text">
+ 
+                        <h2>Agua</h2>
+                        <blockquote>“En casos de enfermedad, el uso del agua es uno de los mejores remedios.” – Consejos sobre el régimen alimenticio, p. 116<br>“El agua pura es una de las mayores bendiciones del cielo. Su uso adecuado promueve la salud.” — Consejos sobre el Régimen Alimenticio, p. 419</blockquote>
+ 
+                    </div>
+ 
+                </div>
+ 
+                <div class="remedios-extra">
+
+                    <ul>
+                        <li>- Bebe entre 6–8 vasos de agua pura diariamente, entre comidas.</li>
+                        <li>- Inicia el día con un vaso de agua tibia en ayunas.</li>
+                        <li>- Usa el agua para higiene diaria: baño, lavado de manos y rostro.</li>
+                        <li>- Aplica compresas de agua fría o caliente según necesidad.</li>
+                        <li>- Evita bebidas azucaradas o con cafeína, que deshidratan.</li>
+                        <li>- Toma agua antes de sentir sed para mantener una hidratación constante.</li>
+                    </ul>
+                
+                </div>
+
+                <button class="leer-mas">Leer más...</button>
+
+            </section>
+
+            <section id="nutricion" class="remedio">
+ 
+                <div class="card-header">
+ 
+                    <img src="nutricion.jpg" alt="Comida salusable">
+ 
+                    <div class="header-text">
+ 
+                        <h2>Nutrición</h2>
+                        <blockquote>“La dieta afecta grandemente la salud del alma y del cuerpo.” – Consejos sobre el régimen alimenticio, p. 33<br>“Los alimentos saludables, bien preparados y debidamente combinados, son la medicina que el cuerpo necesita para restaurarse y sostenerse.” — Consejos sobre el Régimen Alimenticio, p. 87</blockquote>
+ 
+                    </div>
+ 
+                </div>
+ 
+                <div class="remedios-extra">
+
+                    <ul>
+                        <li>- Come frutas y verduras frescas todos los días.</li>
+                        <li>- Mantén horarios regulares para tus comidas.</li>
+                        <li>- Mastica bien los alimentos y come despacio.</li>
+                        <li>- Evita los alimentos ultra procesados, azúcares y grasas saturadas.</li>
+                        <li>- No comas entre comidas; respeta los tiempos de digestión.</li>
+                        <li>- Prefiere una dieta basada en plantas, con cereales integrales, legumbres y semillas.</li>
+                    </ul>
+                
+                </div>
+            
+                <button class="leer-mas">Leer más...</button>
+
+            </section>
+
+            <section id="temperancia" class="remedio">
+
+                <div class="card-header">
+
+                    <img src="temperancia.jpg" alt="Mujer puede escoger saludable o no">
+
+                    <div class="header-text">
+
+                        <h2>Temperancia</h2>
+                        <blockquote>“La verdadera temperancia nos enseña a abstenernos completamente de lo que es dañino y usar con sabiduría lo que es bueno.” – La temperancia, p. 138<br>“Todo lo que disminuya la fuerza física debilita la mente y hace más difícil discernir entre lo correcto y lo errado.” — La Temperancia, p. 13</blockquote>
+
+                    </div>
+
+                </div>
+
+                <div class="remedios-extra">
+
+                    <ul>
+                        <li>- Evita completamente el tabaco, el alcohol y otras sustancias dañinas.</li>
+                        <li>- Come solo la cantidad necesaria para sentirte saciado, no lleno.</li>
+                        <li>- No te sobrecargues de actividades o compromisos.</li>
+                        <li>- Mantén un equilibrio entre trabajo, estudio, descanso y recreación.</li>
+                        <li>- Usa con moderación lo bueno: comida saludable, actividad física, etc.</li>
+                        <li>- Aprende a decir “no” a los excesos y hábitos perjudiciales.</li>
+                    </ul>
+                
+                </div>
+
+                <button class="leer-mas">Leer más...</button>
+            
+            </section>
+
+            <section id="esperanza" class="remedio">
+            
+                <div class="card-header">
+            
+                    <img src="esperanza.jpg" alt="Cruz de Jesús recusitado.">
+            
+                    <div class="header-text">
+            
+                        <h2>Esperanza en Dios</h2>
+                        <blockquote>“La fe en Dios es esencial para la vida espiritual y física. Da paz al alma y fortaleza al cuerpo.” – El ministerio de curación, p. 241<br>“Confía plenamente en Dios. Él es el gran Médico.” — Consejos sobre la Salud, p. 346</blockquote>
+            
+                    </div>
+            
+                </div>
+            
+                <div class="remedios-extra">
+
+                    <ul>
+                        <li>- Comienza el día con oración y meditación en la Palabra.</li>
+                        <li>- Entrégale tus cargas a Dios a través de la fe y la oración.</li>
+                        <li>- Cultiva la gratitud diaria por las bendiciones recibidas.</li>
+                        <li>- Ten momentos de quietud y reflexión espiritual durante el día.</li>
+                        <li>- Confía en que Dios cuida de ti incluso en medio de la enfermedad.</li>
+                        <li>- Participa en actividades espirituales y comunión cristiana.</li>
+                    </ul>
+                
+                </div>
+
+                <button class="leer-mas">Leer más...</button>
+            
+            </section>
+        
+        </div>
+
+        <p class="bottom">El aire puro, el sol, la abstinencia, el descanso, el ejercicio, un régimen alimenticio conveniente, el agua y la confianza en el poder Divino son los verdaderos remedios.</p>
+    </section>
+    
+    <!-- Soyalin Información -->
+    <section class="about-us-container">
+
+        <div id="nosotros" class="soyalin-info">
+
+            <section id="bienvenida">
+                <div class="title">
+                    <h1>Somos <h5>Soyalin</h5></h1>
+                </div>
+                <h3>Nutrición natural. Bienestar real.</h3>
+                <p>
+                    En <strong>Soyalin</strong> elaboramos productos saludables, caseros y 100% naturales con un solo propósito:
+                    <em>mejorar tu calidad de vida</em> a través de una alimentación consciente y equilibrada.
+                </p>
+
+                </section>
+
+                <section id="porque-elegir">
+                <h2>¿Por qué elegir Soyalin?</h2>
+                <ul>
+                    <li><strong>Ingredientes naturales</strong>: Sin conservantes, sin químicos, sin secretos.</li>
+                    <li><strong>Hecho en casa, con estándar profesional</strong>: Lo artesanal también puede ser serio.</li>
+                    <li><strong>Compromiso con tu salud</strong>: Nuestros productos están pensados para alimentar, fortalecer y cuidar.</li>
+                    <li><strong>Valores que alimentan</strong>: Promovemos un estilo de vida basado en la nutrición, el equilibrio y el respeto por el cuerpo.</li>
+                </ul>
+                </section>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonios-grid">
+            <blockquote>
+                <p>“Desde que consumo la granola de Soyalin, mis digestiones son mejores. ¡Y es deliciosa!”</p>
+                <footer>– Clara R.</footer>
+            </blockquote>
+            <blockquote>
+                <p>“Siento más energía y menos ansiedad con las barras de cereales. Las amo.”</p>
+                <footer>– Miguel T.</footer>
+            </blockquote>
+            <blockquote>
+                <p>“El tofu es el mejor que he probado. ¡Textura perfecta y sabor suave!”</p>
+                <footer>– Ana P.</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form id="contact-form" action="https://formsubmit.co/a32602e081f54502edb95311b023f897" method="POST">
+            <input type="hidden" name="_next" value="https://soyalin.cl/">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p><img src="down-arrow.png"> O en nuestras redes sociales <img src="down-arrow.png"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2025 Soyalin. Todos los derechos reservados.</p>
+        <div class="redes">
+            <a href="https://es-la.facebook.com/soyalin.chile/" target="_blank" rel="noopener"><img src="facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/soyalinchile/" target="_blank" rel="noopener"><img src="instagram.svg" alt="Instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=56979420958" target="_blank"><img src="whatsapp.svg" alt="WhatsApp"></a>
+            <a href="mailto:soyalinchile.2020@gmail.com?subject=Consulta%20de%20página%20web" target="_blank"><img src="envelope.svg" alt="E-mail"></a>
+        </div>
+        <div class="pz-pablo">Web desarrollada por <a href="#">PzPablo</a>.</div>
+    </footer>
+
+    
+
+<script src="script.js"></script>
+
+</body>
+</html>
