@@ -1207,7 +1207,8 @@ ol, ul{
 
 #footer .pz-pablo a{
     text-decoration: none;
-    color: #999;
+    font-size: 18px;
+    color: #ebebeb;
     transition: all 0.3s ease;
 }
 
